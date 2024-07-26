@@ -1,0 +1,16 @@
+#include stdio.h
+
+int main() {
+    double A, B;
+    double media;
+
+ 
+    scanf(%lfn, &A); 
+    scanf(%lfn, &B); 
+
+    media = ((A3.5)+(B7.5))(3.5+7.5);
+    
+    printf(MEDIA = %.5lfn, media);
+    
+    return 0;
+}
