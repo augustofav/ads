@@ -22,8 +22,8 @@ int main() {
     while (1) {
         printf("Escolha a operação:\n");
         printf("0 - Soma\n");
-        printf("1 - Subtração\n");
-        printf("2 - Multiplicação\n");
+        printf("1 - Subtraçao\n");
+        printf("2 - Multiplicaçao\n");
         printf("3 - Divisão\n");
         printf("4 - Potenciação\n");
         printf("5 - Raiz Quadrada\n");
@@ -37,30 +37,30 @@ int main() {
 
         switch (escolha) {
             case 0:
-                printf("Digite o primeiro número: ");
+                printf("Digite o primeiro numero: ");
                 scanf("%d", &a);
-                printf("Digite o segundo número: ");
+                printf("Digite o segundo numero: ");
                 scanf("%d", &b);
                 soma(a, b);
                 break;
             case 1:
-                printf("Digite o primeiro número: ");
+                printf("Digite o primeiro numero: ");
                 scanf("%d", &a);
-                printf("Digite o segundo número: ");
+                printf("Digite o segundo numero: ");
                 scanf("%d", &b);
                 subtracao(a, b);
                 break;
             case 2:
-                printf("Digite o primeiro número: ");
+                printf("Digite o primeiro nmero: ");
                 scanf("%d", &a);
-                printf("Digite o segundo número: ");
+                printf("Digite o segundo numero: ");
                 scanf("%d", &b);
                 multiplicacao(a, b);
                 break;
             case 3:
-                printf("Digite o primeiro número: ");
+                printf("Digite o primeiro numero: ");
                 scanf("%d", &a);
-                printf("Digite o segundo número: ");
+                printf("Digite o segundo numero: ");
                 scanf("%d", &b);
                 divisao(a, b);
                 break;
@@ -82,16 +82,16 @@ int main() {
                 printf("Resultado: %d\n", fatorial(a));
                 break;
             case 7:
-                printf("Digite o primeiro número: ");
+                printf("Digite o primeiro numero: ");
                 scanf("%d", &a);
-                printf("Digite o segundo número: ");
+                printf("Digite o segundo numero: ");
                 scanf("%d", &b);
                 mdc(a, b);
                 break;
             case 8:
-                printf("Digite o primeiro número: ");
+                printf("Digite o primeiro numero: ");
                 scanf("%d", &a);
-                printf("Digite o segundo número: ");
+                printf("Digite o segundo numero: ");
                 scanf("%d", &b);
                 mmc(a, b);
                 break;
@@ -104,7 +104,7 @@ int main() {
                 printf("Saindo\n");
                 return 0;
             default:
-                printf("Opção inválida\n");
+                printf("Opcao invalida\n");
                 break;
         }
     }
@@ -186,7 +186,7 @@ void mdc(int a, int b) {
 
 void mmc(int a, int b) {
     if (a == 0 || b == 0) {
-        printf("Erro: MMC de zero com qualquer número não existe\n");
+        printf("Erro: MMC de zero com qualquer numero nao existe\n");
         return;
     }
     int mdc_valor = a;
@@ -202,19 +202,19 @@ void mmc(int a, int b) {
 
 void equacaoSegundoGrau(double a, double b, double c) {
     if (a == 0) {
-        printf("Erro: O coeficiente 'a' não pode ser zero\n");
+        printf("Erro: O coeficiente 'a' nao pode ser zero\n");
         return;
     }
 
     double delta = b * b - 4 * a * c;
     if (delta < 0) {
-        printf("A equação não possui raízes reais.\n");
+        printf("A equação não possui raizes reais.\n");
     } else if (delta == 0) {
         double raiz = -b / (2 * a);
-        printf("A equação possui uma raiz real: %.5lf\n", raiz);
+        printf("A equaçao possui uma raiz real: %.5lf\n", raiz);
     } else {
         double raiz1 = (-b + raizQuadradaAux(delta)) / (2 * a);
         double raiz2 = (-b - raizQuadradaAux(delta)) / (2 * a);
-        printf("A equação possui duas raízes reais: %.5lf e %.5lf\n", raiz1, raiz2);
+        printf("A equaçao possui duas raizes reais: %.5lf e %.5lf\n", raiz1, raiz2);
     }
 }
